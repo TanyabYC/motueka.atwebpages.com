@@ -1,6 +1,14 @@
 # Web Application | The Motueka Bed & Breakfast
-...
+The project involved completing the development of a web application based on a design brief for a fictitious business, The Motueka Bed & Breakfast.
 
+The owners hired a web development company to create a website that would attract more customers and allow them to make online reservations. GUI design aspects of the website would be handled by the web development company. However, they needed a developer, me, to assist their team with developing the code to add functionality to the website. Booking and login pages needed to be developed and rooms and customer pages needed to be updated. Customer-facing pages would attract more customers, whilst administrator pages would allow administrators to manage customers, rooms, and bookings. Authentication, authorisation, session management and logout functionality needed to be implemented.
+
+The project was completed over 3 assessments whilst completing the Web Programming course at Open Polytechnic NZ as part of the Web Development and Design diploma. The web application was built with HTML5, then PHP, JavaScript and a SQL database. JavaScript technologies and libraries implemented include jQuery UI library for picking dates, JavaScript Object Notation (JSON) to search for room availability or customers, and AJAX to help content load asynchronously without waiting for the whole web page to load. The privacy statement was created with the Privacy Statement Generator at https://privacy.org.nz/tools/privacy-statement-generator/ with the type of private identifiable information (PI) that the web application collects from users.
+
+# Security Measures Implemented
+User input is validated with HTML5 code to prevent users from entering incorrect information and control the type of data sent to the database. SQL injection attacks are mitigated by using parameterised prepared sql statements. Cross-site Scripting (XSS) attacks are mitigated by filtering and encoding data. Cross-Site Request Forgery (CSRF) attacks are mitigated by implementing Cross-Origin Resource Sharing (CORS) headers.
+
+A default username and password of 'root' was added to the database to test pages viewed by administrators. For security reasons, this would need to be updated within the database before going live to allow for a private administrator username and password.
 
 # Screenshots
 # Temporary Launch Page
@@ -64,6 +72,7 @@ Administrators can't register here and need to be loaded directly onto the datab
 # Booking Preview Before Deletion Page | Administrator Page
 ![image](https://github.com/TanyabYC/motueka.atwebpages.com/assets/129232229/bad73656-ed94-4bd4-8911-accec3b7580c)
 
+
 # Customer Pages
 # Not Authorised Page | Authorisation Functionality
 ![image](https://github.com/TanyabYC/motueka.atwebpages.com/assets/129232229/ddcd042c-3ce0-4b82-b100-588fea7b8a80)
@@ -92,4 +101,6 @@ Edit and delete pages revert to the not authorised page
 
 # Customer Details Update Page | Customer Page
 ![image](https://github.com/TanyabYC/motueka.atwebpages.com/assets/129232229/ebbd0c29-2b77-4b51-9b42-6bfbf7cd588d)
-Accessible from Account Details View page to allow customers to update their personal information. Note: the web application does not allow customers to reset their passwords. Further enhancements could involve updating this page with customer contact details and e-mail preferences instead and adding a password reset button for customers to reset their passwords via an e-mail link.
+Accessible from Account Details View page to allow customers to update their personal information. 
+
+Note: The web application does not allow customers to reset their passwords. Further enhancements could involve updating the Account Details View page instead with customer contact details and e-mail preferences and adding a password reset button for customers to reset their passwords via an e-mail link.
