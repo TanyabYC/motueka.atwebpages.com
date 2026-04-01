@@ -1,4 +1,4 @@
-<?php 
+<?php
 // access session functions
     include "checksession.php";
 
@@ -55,8 +55,6 @@
 
             <!-- Links to relevant pages -->
             <ul>
-                <li><a href="original_template/">Original Template example</a>
-                <li><a href="converted_template/">Converted Template example</a>
                 <li><a href="listcustomers.php">Customer listing</a>
                 <li><a href="listrooms.php">Rooms listing</a>
                 <li><a href="listbookings.php">Bookings listing</a>
